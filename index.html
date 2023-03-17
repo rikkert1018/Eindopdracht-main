@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Big Chunhus Tamagotchi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div class="background">
+		<div class="container">
+			<h2 id="petName"></h2>
+			<div class="tamagotchi">
+				<img id="pet" src="./img/Big_chungus.webp">
+				<div class="stats">
+					<p>Hunger: <span id="hunger">50</span></p>
+					<p>Happiness: <span id="happiness">50</span></p>
+					<p>Energy: <span id="energy">50</span></p>
+				</div>
+			</div>
+			<div class="buttons">
+				<button onclick="feed()">Feed</button>
+				<button onclick="play()">Play</button>
+				<button onclick="sleep()">Sleep</button>
+			</div>
+			<div class="buttons-background">
+				<button id="change-bg-btn">Change background</button>
+			</div>
+			
+			<div class="name-input">
+				<label for="pet-name-input">Enter your tamagotchi's name: </label>
+				<input type="text" id="pet-name-input">
+				<button onclick="updatePetName()">Submit</button>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
